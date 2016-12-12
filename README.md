@@ -3,6 +3,7 @@
 </p>
 
 # Minimalist
+Forked from Dikiaap/minimalist.
 Minimalist is a Material Colorscheme Darker for Vim & inspired by 
 [Material Theme](https://github.com/equinusocio/material-theme).
 
@@ -13,7 +14,7 @@ To install this colorscheme, you can use one of the following ways:
 - Use [Vundle](https://github.com/VundleVim/Vundle.vim#quick-start) by adding 
 to your `.vimrc` Vundle plugin section:
 
-        Plugin 'dikiaap/minimalist'
+        Plugin 'jakemoldham/minimalist'
 
     Then run `:PluginInstall`.
 
@@ -24,46 +25,39 @@ OR
     Run the following in a terminal:   
 
         cd ~/.vim/bundle
-        git clone https://github.com/dikiaap/minimalist
+        git clone git@github.com:jakemoldham/minimalist.git
 
-## Usage
+## usage
 
-After finishing installation, put this code to your `.vimrc`:
+after finishing installation, put this code to your `.vimrc`:
 
-    set t_Co=256
+    set t_co=256
     syntax on
     colorscheme minimalist
 
-This colorscheme also built-in with airline theme. If you wanna use:
+this colorscheme also built-in with airline theme. if you wanna use:
 
     let g:airline_theme='minimalist'
     let g:airline_powerline_fonts = 1
     let g:airline#extensions#tabline#enabled = 1
 
-## Support
+## support
 
-As you know, colorscheme in vim by default supports many programming languages.
-At this time `minimalist` is looks beautiful & focused on:
+as you know, colorscheme in vim by default supports many programming languages.
+at this time `minimalist` is looks beautiful & focused on:
 
-* C++
-* CSS/CSS3
-* HTML/HTML5
-* JavaScript
-* Markdown
-* PHP
-* Python
-* Ruby
-* Sass
-* Shell
-* XML
+* c++
+* css/css3
+* html/html5
+* javascript
+* markdown
+* php
+* python
+* ruby
+* sass
+* shell
+* xml
 
-## Links
+## links
 
-[GitHub](https://github.com/dikiaap/minimalist) ·
-[Vim.org](http://www.vim.org/scripts/script.php?script_id=5490) ·
-[Vim Awesome](#) ·
-[DotShare.it](http://dotshare.it/dots/1397/)
-
-## License
-
-MIT © [Diki Andriansyah](https://dikiaap.id)
+[github](git@github.com:jakemoldham/minimalist.git) ·
