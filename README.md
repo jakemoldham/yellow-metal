@@ -1,8 +1,4 @@
-<p align="center">
-    <img src="http://i.imgur.com/JrZKwfY.png" alt="Minimalist on HTML">
-</p>
-
-# Minimalist
+# Yellow-Metal
 Forked from Dikiaap/minimalist.
 Minimalist is a Material Colorscheme Darker for Vim & inspired by 
 [Material Theme](https://github.com/equinusocio/material-theme).
@@ -14,7 +10,7 @@ To install this colorscheme, you can use one of the following ways:
 - Use [Vundle](https://github.com/VundleVim/Vundle.vim#quick-start) by adding 
 to your `.vimrc` Vundle plugin section:
 
-        Plugin 'jakemoldham/minimalist'
+        Plugin 'jakemoldham/yellow-metal'
 
     Then run `:PluginInstall`.
 
@@ -25,7 +21,7 @@ OR
     Run the following in a terminal:   
 
         cd ~/.vim/bundle
-        git clone git@github.com:jakemoldham/minimalist.git
+        git clone git@github.com:jakemoldham/yellow-metal.git
 
 ## usage
 
@@ -33,18 +29,18 @@ after finishing installation, put this code to your `.vimrc`:
 
     set t_co=256
     syntax on
-    colorscheme minimalist
+    colorscheme yellow-metal
 
 this colorscheme also built-in with airline theme. if you wanna use:
 
-    let g:airline_theme='minimalist'
+    let g:airline_theme='yellow-metal'
     let g:airline_powerline_fonts = 1
     let g:airline#extensions#tabline#enabled = 1
 
 ## support
 
 as you know, colorscheme in vim by default supports many programming languages.
-at this time `minimalist` is looks beautiful & focused on:
+at this time `yellow-metal` is looks beautiful & focused on:
 
 * c++
 * css/css3
@@ -60,4 +56,4 @@ at this time `minimalist` is looks beautiful & focused on:
 
 ## links
 
-[github](git@github.com:jakemoldham/minimalist.git) ·
+[github](git@github.com:jakemoldham/yellow-metal.git) ·
