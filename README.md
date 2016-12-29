@@ -14,6 +14,10 @@ to your `.vimrc` Vundle plugin section:
 
     Then run `:PluginInstall`.
 
+If installed to get newest updates
+
+    Then run `:PluginInstall!`
+
 OR
 
 - Use [Pathogen](https://github.com/tpope/vim-pathogen#installation):
