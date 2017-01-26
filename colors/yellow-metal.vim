@@ -59,7 +59,7 @@ hi NERDTreeClosable ctermfg=167     ctermbg=NONE    cterm=NONE      guifg=#D75F5
 hi Boolean          ctermfg=173     ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
 hi Character        ctermfg=140     ctermbg=NONE    cterm=NONE      guifg=#AF87D7       guibg=NONE      gui=NONE
 hi Comment          ctermfg=238     ctermbg=NONE    cterm=NONE      guifg=#444444       guibg=NONE      gui=NONE
-hi Conditional      ctermfg=16      ctermbg=NONE    cterm=NONE      guifg=#49A693       guibg=NONE      gui=NONE
+hi Conditional      ctermfg=79      ctermbg=NONE    cterm=NONE      guifg=#49A693       guibg=NONE      gui=NONE
 hi Constant         ctermfg=141     ctermbg=NONE    cterm=NONE      guifg=#AF87D7       guibg=NONE      gui=NONE
 hi Define           ctermfg=167     ctermbg=NONE    cterm=NONE      guifg=#A64B29       guibg=NONE      gui=NONE
 hi Float            ctermfg=140     ctermbg=NONE    cterm=NONE      guifg=#AF87D7       guibg=NONE      gui=NONE
