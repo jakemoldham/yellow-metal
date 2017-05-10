@@ -43,7 +43,7 @@ hi StatusLineNC     ctermfg=255     ctermbg=241     cterm=NONE      guifg=#EEEEE
 hi Title            ctermfg=255     ctermbg=NONE    cterm=NONE      guifg=#EEEEEE       guibg=NONE      gui=NONE
 hi Underlined       ctermfg=NONE    ctermbg=NONE    cterm=NONE      guifg=NONE          guibg=NONE      gui=NONE
 hi VertSplit        ctermfg=241     ctermbg=241     cterm=NONE      guifg=#606060       guibg=#606060   gui=NONE
-hi Visual           ctermfg=241     ctermbg=227     cterm=reverse   guifg=#606060       guibg=#FFFFB3   gui=reverse
+hi Visual           ctermfg=241     ctermbg=229     cterm=reverse   guifg=#606060       guibg=#FFFFB3   gui=reverse
 hi WarningMsg       ctermfg=255     ctermbg=167     cterm=NONE      guifg=#EEEEEE       guibg=#D75F5F   gui=NONE
 hi NERDTreeUp       ctermfg=167     ctermbg=NONE    cterm=NONE      guifg=#D75F5F       guibg=NONE      gui=NONE
 hi NERDTreeDir      ctermfg=141     ctermbg=NONE    cterm=bold      guifg=#af87d7       guibg=NONE      gui=bold
