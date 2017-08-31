@@ -193,9 +193,9 @@ hi rubyRegexpDelimiter  ctermfg=117     ctermbg=NONE    cterm=NONE      guifg=#8
 hi rubyStringDelimiter  ctermfg=117     ctermbg=NONE    cterm=NONE      guifg=#87D7FF       guibg=NONE      gui=NONE
 hi rubySymbol           ctermfg=153     ctermbg=NONE    cterm=NONE      guifg=#A9C2D9       guibg=NONE      gui=NONE
 hi eelixirDelimiter     ctermfg=117     ctermbg=NONE    cterm=NONE      guifg=#87D7FF       guibg=NONE      gui=NONE " Elixir
-hi elixirBlockDefinition ctermfg=173    ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
+hi elixirBlockDefinition ctermfg=173    ctermbg=NONE    cterm=NONE      guifg=#FFE587       guibg=NONE      gui=NONE
 hi elixirBoolean        ctermfg=173     ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
-hi elixirDefine         ctermfg=245     ctermbg=NONE    cterm=NONE      guifg=#8C8C8C       guibg=NONE      gui=NONE
+hi elixirDefine         ctermfg=245     ctermbg=NONE    cterm=NONE      guifg=#D9601A       guibg=NONE      gui=NONE
 hi elixirDocTest        ctermfg=173     ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
 hi elixirExUnitAssert   ctermfg=173     ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
 hi elixirExUnitMacro    ctermfg=173     ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
@@ -204,7 +204,7 @@ hi elixirKeyword        ctermfg=153     ctermbg=NONE    cterm=NONE      guifg=#A
 hi elixirModuleDefine   ctermfg=140     ctermbg=NONE    cterm=NONE      guifg=#AF87D7       guibg=NONE      gui=NONE
 hi elixirPrivateDefine  ctermfg=117     ctermbg=NONE    cterm=NONE      guifg=#5FAFD7       guibg=NONE      gui=NONE
 hi elixirStringDelimiter ctermfg=117    ctermbg=NONE    cterm=NONE      guifg=#87D7FF       guibg=NONE      gui=NONE
-hi elixirVariable       ctermfg=117     ctermbg=NONE    cterm=NONE      guifg=#FFDEC7       guibg=NONE      gui=NONE
+hi elixirVariable       ctermfg=117     ctermbg=NONE    cterm=NONE      guifg=#B17A9B       guibg=NONE      gui=NONE
 hi sassClass            ctermfg=215     ctermbg=NONE    cterm=NONE      guifg=#FFAF5F       guibg=NONE      gui=NONE " Sass
 hi sassClassChar        ctermfg=215     ctermbg=NONE    cterm=NONE      guifg=#FFAF5F       guibg=NONE      gui=NONE
 hi sassFunction         ctermfg=255     ctermbg=NONE    cterm=NONE      guifg=#EEEEEE       guibg=NONE      gui=NONE
