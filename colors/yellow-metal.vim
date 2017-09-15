@@ -14,8 +14,6 @@ if version > 580
 endif
 set t_Co=256
 let g:colors_name = "yellow-metal"
-set cursorline
-call s:hibg("MatchParen","#FF0000","Red",18)
 
 """""""""""""""""""""""
 " General
@@ -23,7 +21,7 @@ call s:hibg("MatchParen","#FF0000","Red",18)
 hi ColorColumn      ctermfg=NONE    ctermbg=233     cterm=NONE      guifg=NONE          guibg=#121212   gui=NONE
 hi Cursor           ctermfg=0       ctermbg=255     cterm=NONE      guifg=#1C1C1C       guibg=#EEEEEE   gui=NONE
 hi CursorColumn     ctermfg=NONE    ctermbg=233     cterm=NONE      guifg=NONE          guibg=#121212   gui=NONE
-hi CursorLine       ctermfg=255     ctermbg=NONE    cterm=underline guifg=#EEEEEE       guibg=NONE      gui=underline
+hi CursorLine       ctermfg=NONE     ctermbg=NONE   cterm=underline guifg=NONE       guibg=NONE      gui=underline
 hi DiffAdd          ctermfg=255     ctermbg=64      cterm=bold      guifg=#EEEEEE       guibg=#5F8700   gui=bold
 hi DiffChange       ctermfg=NONE    ctermbg=NONE    cterm=NONE      guifg=NONE          guibg=NONE      gui=NONE
 hi DiffDelete       ctermfg=167     ctermbg=NONE    cterm=NONE      guifg=#D75F5F       guibg=NONE      gui=NONE
