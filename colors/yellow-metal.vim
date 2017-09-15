@@ -14,14 +14,16 @@ if version > 580
 endif
 set t_Co=256
 let g:colors_name = "yellow-metal"
+set cursorline
+call s:hibg("MatchParen","#FF0000","Red",18)
 
 """""""""""""""""""""""
 " General
 """""""""""""""""""""""
 hi ColorColumn      ctermfg=NONE    ctermbg=233     cterm=NONE      guifg=NONE          guibg=#121212   gui=NONE
-hi Cursor           ctermfg=234     ctermbg=255     cterm=NONE      guifg=#1C1C1C       guibg=#EEEEEE   gui=NONE
+hi Cursor           ctermfg=0       ctermbg=255     cterm=NONE      guifg=#1C1C1C       guibg=#EEEEEE   gui=NONE
 hi CursorColumn     ctermfg=NONE    ctermbg=233     cterm=NONE      guifg=NONE          guibg=#121212   gui=NONE
-hi CursorLine       ctermfg=NONE    ctermbg=233     cterm=NONE      guifg=NONE          guibg=#121212   gui=NONE
+hi CursorLine       ctermfg=255     ctermbg=NONE    cterm=underline guifg=#EEEEEE       guibg=NONE      gui=underline
 hi DiffAdd          ctermfg=255     ctermbg=64      cterm=bold      guifg=#EEEEEE       guibg=#5F8700   gui=bold
 hi DiffChange       ctermfg=NONE    ctermbg=NONE    cterm=NONE      guifg=NONE          guibg=NONE      gui=NONE
 hi DiffDelete       ctermfg=167     ctermbg=NONE    cterm=NONE      guifg=#D75F5F       guibg=NONE      gui=NONE
@@ -33,7 +35,7 @@ hi IncSearch        ctermfg=234     ctermbg=75      cterm=NONE      guifg=#1C1C1
 hi LineNr           ctermfg=59      ctermbg=235     cterm=NONE      guifg=#5F5F5F       guibg=#262626   gui=NONE
 hi MatchParen       ctermfg=NONE    ctermbg=NONE    cterm=underline guifg=NONE          guibg=NONE      gui=underline
 hi NonText          ctermfg=234     ctermbg=234     cterm=NONE      guifg=#1C1C1C       guibg=#1C1C1C   gui=NONE
-hi Normal           ctermfg=230     ctermbg=234     cterm=NONE      guifg=#FFFFB3       guibg=#1C1C1C   gui=NONE
+hi Normal           ctermfg=229     ctermbg=234     cterm=NONE      guifg=#FFFFB3       guibg=#1C1C1C   gui=NONE
 hi Pmenu            ctermfg=NONE    ctermbg=NONE    cterm=NONE      guifg=NONE          guibg=NONE      gui=NONE
 hi PmenuSel         ctermfg=NONE    ctermbg=59      cterm=NONE      guifg=NONE          guibg=#5F5F5F   gui=NONE
 hi Search term=reverse ctermfg=NONE ctermbg=NONE cterm=reverse,bold guifg=NONE          guibg=NONE      gui=reverse,bold
@@ -47,7 +49,7 @@ hi Visual           ctermfg=241     ctermbg=229     cterm=reverse   guifg=#60606
 hi WarningMsg       ctermfg=255     ctermbg=167     cterm=NONE      guifg=#EEEEEE       guibg=#D75F5F   gui=NONE
 hi NERDTreeUp       ctermfg=167     ctermbg=NONE    cterm=NONE      guifg=#D75F5F       guibg=NONE      gui=NONE
 hi NERDTreeDir      ctermfg=141     ctermbg=NONE    cterm=bold      guifg=#af87d7       guibg=NONE      gui=bold
-hi NERDTreeDirSlash ctermfg=219     ctermbg=NONE    cterm=NONE      guifg=#d7d787       guibg=NONE      gui=NONE
+hi NERDTreeDirSlash ctermfg=229     ctermbg=NONE    cterm=NONE      guifg=#FFFFB3       guibg=NONE      gui=NONE
 hi NERDTreeFile     ctermfg=117     ctermbg=NONE    cterm=NONE      guifg=#87afd7       guibg=NONE      gui=NONE
 hi NERDTreeCWD      ctermfg=167     ctermbg=NONE    cterm=NONE      guifg=#D75F5F       guibg=NONE      gui=NONE
 hi NERDTreeOpenable ctermfg=167     ctermbg=NONE    cterm=NONE      guifg=#D75F5F       guibg=NONE      gui=NONE
@@ -61,12 +63,12 @@ hi Character        ctermfg=140     ctermbg=NONE    cterm=NONE      guifg=#AF87D
 hi Comment          ctermfg=246     ctermbg=NONE    cterm=NONE      guifg=#999999       guibg=NONE      gui=NONE
 hi Conditional      ctermfg=79      ctermbg=NONE    cterm=NONE      guifg=#49A693       guibg=NONE      gui=NONE
 hi Constant         ctermfg=141     ctermbg=NONE    cterm=NONE      guifg=#AF87D7       guibg=NONE      gui=NONE
-hi Define           ctermfg=167     ctermbg=NONE    cterm=NONE      guifg=#A64B29       guibg=NONE      gui=NONE
+hi Define           ctermfg=167     ctermbg=NONE    cterm=NONE      guifg=#D75F5F       guibg=NONE      gui=NONE
 hi Float            ctermfg=140     ctermbg=NONE    cterm=NONE      guifg=#AF87D7       guibg=NONE      gui=NONE
 hi Function         ctermfg=94      ctermbg=NONE    cterm=NONE      guifg=#A47E38       guibg=NONE      gui=NONE
-hi Identifier       ctermfg=255     ctermbg=NONE    cterm=NONE      guifg=#cccccc       guibg=NONE      gui=italic
+hi Identifier       ctermfg=7       ctermbg=NONE    cterm=italic      guifg=#cccccc       guibg=NONE      gui=italic
 hi Keyword          ctermfg=140     ctermbg=NONE    cterm=NONE      guifg=#AF87D7       guibg=NONE      gui=NONE
-hi Label            ctermfg=229     ctermbg=NONE    cterm=NONE      guifg=#D7D787       guibg=NONE      gui=NONE
+hi Label            ctermfg=229     ctermbg=NONE    cterm=NONE      guifg=#FFFFB3       guibg=NONE      gui=NONE
 hi Number           ctermfg=173     ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
 hi Operator         ctermfg=139     ctermbg=NONE    cterm=NONE      guifg=#B17A9B       guibg=NONE      gui=NONE
 hi PreProc          ctermfg=140     ctermbg=NONE    cterm=NONE      guifg=#AF87D7       guibg=NONE      gui=NONE
@@ -79,7 +81,7 @@ hi StorageClass     ctermfg=215     ctermbg=NONE    cterm=NONE      guifg=#FFAF5
 hi String           ctermfg=117     ctermbg=NONE    cterm=NONE      guifg=#87D7FF       guibg=NONE      gui=NONE
 hi Structure        ctermfg=215     ctermbg=NONE    cterm=NONE      guifg=#FFAF5F       guibg=NONE      gui=NONE
 hi Tag              ctermfg=140     ctermbg=NONE    cterm=NONE      guifg=#AF87D7       guibg=NONE      gui=NONE
-hi Todo             ctermfg=74      ctermbg=234     cterm=inverse   guifg=#5FAFD7       guibg=#1C1C1C   gui=inverse,bold
+hi Todo             ctermfg=74      ctermbg=234     cterm=inverse,bold guifg=#5FAFD7    guibg=#1C1C1C   gui=inverse,bold
 hi Type             ctermfg=140     ctermbg=NONE    cterm=NONE      guifg=#AF87D7       guibg=NONE      gui=NONE
 
 """""""""""""""""""""""
@@ -104,7 +106,7 @@ hi cssPseudoClassId     ctermfg=140     ctermbg=NONE    cterm=NONE      guifg=#A
 hi cssTagName           ctermfg=167     ctermbg=NONE    cterm=NONE      guifg=#D75F5F       guibg=NONE      gui=NONE
 hi cssUIAttr            ctermfg=173     ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
 hi cssUnitDecorators    ctermfg=173     ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
-hi cssURL               ctermfg=255     ctermbg=NONE    cterm=NONE      guifg=#EEEEEE       guibg=NONE      gui=italic
+hi cssURL               ctermfg=255     ctermbg=NONE    cterm=italic    guifg=#EEEEEE       guibg=NONE      gui=italic
 hi cssValueLength       ctermfg=173     ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
 hi cssValueNumber       ctermfg=173     ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
 hi htmlArg              ctermfg=215     ctermbg=NONE    cterm=NONE      guifg=#FFAF5F       guibg=NONE      gui=NONE " HTML/HTML5
@@ -178,41 +180,41 @@ hi pythonStatement      ctermfg=140     ctermbg=NONE    cterm=NONE      guifg=#A
 hi pythonTodo           ctermfg=74      ctermbg=NONE    cterm=NONE      guifg=#5FAFD7       guibg=NONE      gui=NONE
 hi rubyBlockParameter   ctermfg=173     ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE " Ruby
 hi rubyClass            ctermfg=140     ctermbg=NONE    cterm=NONE      guifg=#AF87D7       guibg=NONE      gui=NONE
-hi rubyClassVariable    ctermfg=117     ctermbg=NONE    cterm=NONE      guifg=#FFDEC7       guibg=NONE      gui=NONE
-hi rubyConstant         ctermfg=208     ctermbg=NONE    cterm=italic    guifg=#D9601A       guibg=NONE      gui=italic
+hi rubyClassVariable    ctermfg=224     ctermbg=NONE    cterm=NONE      guifg=#FFDEC7       guibg=NONE      gui=NONE
+hi rubyConstant         ctermfg=166     ctermbg=NONE    cterm=italic    guifg=#D9601A       guibg=NONE      gui=italic
 hi rubyControl          ctermfg=229     ctermbg=NONE    cterm=NONE      guifg=#FFE587       guibg=NONE      gui=NONE
 hi rubyException        ctermfg=117     ctermbg=NONE    cterm=NONE      guifg=#5FAFD7       guibg=NONE      gui=NONE
 hi rubyFunction         ctermfg=245     ctermbg=NONE    cterm=NONE      guifg=#8C8C8C       guibg=NONE      gui=NONE
 hi rubyInclude          ctermfg=117     ctermbg=NONE    cterm=NONE      guifg=#5FAFD7       guibg=NONE      gui=NONE
-hi rubyInstanceVariable ctermfg=132     ctermbg=NONE    cterm=NONE      guifg=#B17A9B       guibg=NONE      gui=NONE
+hi rubyInstanceVariable ctermfg=138     ctermbg=NONE    cterm=NONE      guifg=#B17A9B       guibg=NONE      gui=NONE
 hi rubyInterpolationDelimiter ctermfg=117 ctermbg=NONE  cterm=NONE      guifg=#87D7FF       guibg=NONE      gui=NONE
 hi rubyOperator         ctermfg=22      ctermbg=NONE    cterm=NONE      guifg=#134e13       guibg=NONE      gui=NONE
 hi rubyPseudoVariable   ctermfg=173     ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
 hi rubyRegexp           ctermfg=117     ctermbg=NONE    cterm=NONE      guifg=#87D7FF       guibg=NONE      gui=NONE
 hi rubyRegexpDelimiter  ctermfg=117     ctermbg=NONE    cterm=NONE      guifg=#87D7FF       guibg=NONE      gui=NONE
 hi rubyStringDelimiter  ctermfg=117     ctermbg=NONE    cterm=NONE      guifg=#87D7FF       guibg=NONE      gui=NONE
-hi rubySymbol           ctermfg=153     ctermbg=NONE    cterm=NONE      guifg=#A9C2D9       guibg=NONE      gui=NONE
+hi rubySymbol           ctermfg=146     ctermbg=NONE    cterm=NONE      guifg=#A9C2D9       guibg=NONE      gui=NONE
 hi elixirDelimiter      ctermfg=117     ctermbg=NONE    cterm=NONE      guifg=#87D7FF       guibg=NONE      gui=NONE " Elixir
-hi elixirBlockDefinition ctermfg=229    ctermbg=NONE    cterm=NONE      guifg=#D9601A       guibg=NONE      gui=NONE
+hi elixirBlockDefinition ctermfg=166    ctermbg=NONE    cterm=NONE      guifg=#D9601A       guibg=NONE      gui=NONE
 hi elixirBoolean        ctermfg=173     ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
-hi elixirDefine         ctermfg=208     ctermbg=NONE    cterm=NONE      guifg=#D9601A       guibg=NONE      gui=NONE
+hi elixirDefine         ctermfg=166     ctermbg=NONE    cterm=NONE      guifg=#D9601A       guibg=NONE      gui=NONE
 hi elixirDocTest        ctermfg=173     ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
 hi elixirExUnitAssert   ctermfg=173     ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
 hi elixirExUnitMacro    ctermfg=173     ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
 hi elixirKernelFunction ctermfg=173     ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
-hi elixirKeyword        ctermfg=153     ctermbg=NONE    cterm=NONE      guifg=#A9C2D9       guibg=NONE      gui=NONE
-hi elixirModuleDefine   ctermfg=140     ctermbg=NONE    cterm=NONE      guifg=#D9601A       guibg=NONE      gui=NONE
+hi elixirKeyword        ctermfg=146     ctermbg=NONE    cterm=NONE      guifg=#A9C2D9       guibg=NONE      gui=NONE
+hi elixirModuleDefine   ctermfg=166     ctermbg=NONE    cterm=NONE      guifg=#D9601A       guibg=NONE      gui=NONE
 hi elixirPrivateDefine  ctermfg=74      ctermbg=NONE    cterm=NONE      guifg=#5FAFD7       guibg=NONE      gui=NONE
 hi elixirStringDelimiter ctermfg=117    ctermbg=NONE    cterm=NONE      guifg=#87D7FF       guibg=NONE      gui=NONE
-hi elixirVariable       ctermfg=132     ctermbg=NONE    cterm=NONE      guifg=#B17A9B       guibg=NONE      gui=NONE
-hi elixirAlias          ctermfg=132     ctermbg=NONE    cterm=NONE      guifg=#B17A9B       guibg=NONE      gui=NONE
-hi elixirAtom           ctermfg=153     ctermbg=NONE    cterm=NONE      guifg=#A9C2D9       guibg=NONE      gui=NONE
+hi elixirVariable       ctermfg=138     ctermbg=NONE    cterm=NONE      guifg=#B17A9B       guibg=NONE      gui=NONE
+hi elixirAlias          ctermfg=138     ctermbg=NONE    cterm=NONE      guifg=#B17A9B       guibg=NONE      gui=NONE
+hi elixirAtom           ctermfg=146     ctermbg=NONE    cterm=NONE      guifg=#A9C2D9       guibg=NONE      gui=NONE
 hi elixirUnusedVariable ctermfg=173     ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
 hi elixirInclude        ctermfg=117     ctermbg=NONE    cterm=NONE      guifg=#5FAFD7       guibg=NONE      gui=NONE
 hi elixirFunctionDeclaration ctermfg=245 ctermbg=NONE   cterm=NONE      guifg=#8C8C8C       guibg=NONE      gui=NONE
 hi elixirStructDefine   ctermfg=117     ctermbg=NONE    cterm=NONE      guifg=#87D7FF       guibg=NONE      gui=NONE
-hi elixirProtocolDefine ctermfg=208     ctermbg=NONE    cterm=NONE      guifg=#D9601A       guibg=NONE      gui=NONE
-hi elixirImplDefine     ctermfg=208     ctermbg=NONE    cterm=NONE      guifg=#D9601A       guibg=NONE      gui=NONE
+hi elixirProtocolDefine ctermfg=166     ctermbg=NONE    cterm=NONE      guifg=#D9601A       guibg=NONE      gui=NONE
+hi elixirImplDefine     ctermfg=166     ctermbg=NONE    cterm=NONE      guifg=#D9601A       guibg=NONE      gui=NONE
 hi elixirModuleDeclaration ctermfg=173  ctermbg=NONE    cterm=NONE      guifg=#D7875F       guibg=NONE      gui=NONE
 hi elixirDocString      ctermfg=117     ctermbg=NONE    cterm=NONE      guifg=#87D7FF       guibg=NONE      gui=NONE
 hi sassClass            ctermfg=215     ctermbg=NONE    cterm=NONE      guifg=#FFAF5F       guibg=NONE      gui=NONE " Sass
